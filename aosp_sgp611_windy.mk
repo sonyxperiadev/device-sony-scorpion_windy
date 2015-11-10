@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_windy_defconfig
+TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_defconfig
 
 $(call inherit-product, device/sony/scorpion/aosp_sgp621_common.mk)
 
