@@ -16,6 +16,10 @@ TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_defconfig
 
 $(call inherit-product, device/sony/scorpion/aosp_sgp621_common.mk)
 
+# NFC config
+PRODUCT_PACKAGES += nfc_nci.scorpion_windy
+ADDITIONAL_DEFAULT_PROPERTIES += ro.hardware.nfc_nci=scorpion_windy
+
 PRODUCT_NAME := aosp_sgp611_windy
 PRODUCT_DEVICE := scorpion_windy
 PRODUCT_MODEL := Xperia Z3 Tablet Compact WiFi(AOSP)
