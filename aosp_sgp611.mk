@@ -12,13 +12,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_windy_defconfig
+TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_defconfig
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, device/sony/scorpion_windy/aosp_sgp6xx_common.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
+
+# Device Init
+PRODUCT_PACKAGES += \
+    init.recovery.scorpion_windy \
+    init.scorpion_windy \
+    ueventd.scorpion_windy
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.scorpion_windy
+
+# Simple PowerHAL
+PRODUCT_PACKAGES += \
+    power.scorpion_windy
+
+# NFC config
+PRODUCT_PACKAGES += \
+    nfc_nci.scorpion_windy
 
 PRODUCT_NAME := aosp_sgp611
 PRODUCT_DEVICE := scorpion_windy
