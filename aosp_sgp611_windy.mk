@@ -16,9 +16,23 @@ TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_defconfig
 
 $(call inherit-product, device/sony/scorpion/aosp_sgp621_common.mk)
 
+# Device Init
+PRODUCT_PACKAGES += \
+    init.recovery.scorpion_windy \
+    init.scorpion_windy \
+    ueventd.scorpion_windy
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.scorpion_windy
+
+# Simple PowerHAL
+PRODUCT_PACKAGES += \
+    power.scorpion_windy
+
 # NFC config
-PRODUCT_PACKAGES += nfc_nci.scorpion_windy
-ADDITIONAL_DEFAULT_PROPERTIES += ro.hardware.nfc_nci=scorpion_windy
+PRODUCT_PACKAGES += \
+    nfc_nci.scorpion_windy
 
 PRODUCT_NAME := aosp_sgp611_windy
 PRODUCT_DEVICE := scorpion_windy

@@ -21,9 +21,8 @@ TARGET_RECOVERY_FSTAB = device/sony/scorpion/rootdir/fstab.shinano
 
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12253641728
 
-#BOARD_KERNEL_CMDLINE += mem=1281M@255M mem=1407M@2048M
+BOARD_KERNEL_CMDLINE += androidboot.hardware=scorpion_windy
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/scorpion/kernel-headers
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
-TARGET_TAP_TO_WAKE_STRING := true
