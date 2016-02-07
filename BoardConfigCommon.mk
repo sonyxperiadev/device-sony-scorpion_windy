@@ -12,12 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_windy_defconfig
+include device/sony/shinano/BoardConfig.mk
 
-$(call inherit-product, device/sony/scorpion_windy/aosp_sgp6xx_common.mk)
-
-PRODUCT_NAME := aosp_sgp611_windy
-PRODUCT_DEVICE := scorpion_windy
-PRODUCT_MODEL := Xperia Z3 Tablet Compact WiFi(AOSP)
-PRODUCT_BRAND := Sony
-PRODUCT_MANUFACTURER := Sony
+PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/scorpion_windy/kernel-headers
