@@ -16,7 +16,7 @@ TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_windy_defconfig
 
 $(call inherit-product, device/sony/scorpion_windy/aosp_sgp6xx_common.mk)
 
-PRODUCT_NAME := aosp_sgp611_windy
+PRODUCT_NAME := aosp_sgp611
 PRODUCT_DEVICE := scorpion_windy
 PRODUCT_MODEL := Xperia Z3 Tablet Compact WiFi(AOSP)
 PRODUCT_BRAND := Sony
