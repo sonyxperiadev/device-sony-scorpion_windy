@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc_nci.scorpion_windy
 
-PRODUCT_NAME := aosp_sgp611_windy
+PRODUCT_NAME := aosp_sgp611
 PRODUCT_DEVICE := scorpion_windy
 PRODUCT_MODEL := Xperia Z3 Tablet Compact WiFi(AOSP)
 PRODUCT_BRAND := Sony
