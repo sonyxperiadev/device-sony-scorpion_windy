@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/aosp_sgp611.mk
+include device/sony/shinano/PlatformConfig.mk
 
+PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/scorpion_windy/kernel-headers
+
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
