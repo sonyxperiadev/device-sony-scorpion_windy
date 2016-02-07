@@ -12,6 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/shinano/BoardConfig.mk
+include device/sony/shinano/PlatformConfig.mk
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/scorpion_windy/kernel-headers
