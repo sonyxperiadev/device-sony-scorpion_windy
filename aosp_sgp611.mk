@@ -14,6 +14,7 @@
 
 TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_defconfig
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, device/sony/scorpion_windy/aosp_sgp6xx_common.mk)
 
 # Device Init
