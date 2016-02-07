@@ -15,7 +15,7 @@
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/scoprion_windy/overlay
 
-$(call inherit-product, device/sony/shinano/device.mk)
+$(call inherit-product, device/sony/shinano/platform.mk)
 $(call inherit-product, vendor/sony/scoprion/scorpion-vendor.mk)
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 
