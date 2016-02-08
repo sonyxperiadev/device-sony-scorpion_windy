@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
 
 # NFC config
 PRODUCT_PACKAGES += \
-    nfc_nci.scorpion_windy
+    nfc_nci.pn54x.default
 
 PRODUCT_NAME := aosp_sgp611
 PRODUCT_DEVICE := scorpion_windy
