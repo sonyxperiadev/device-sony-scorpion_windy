@@ -14,10 +14,7 @@
 
 TARGET_KERNEL_CONFIG := aosp_shinano_scorpion_defconfig
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-$(call inherit-product, device/sony/scorpion_windy/aosp_sgp6xx_common.mk)
-
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -40,6 +37,10 @@ PRODUCT_PACKAGES += \
 # NFC config
 PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/scorpion_windy/aosp_sgp6xx_common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 PRODUCT_NAME := aosp_sgp611
 PRODUCT_DEVICE := scorpion_windy

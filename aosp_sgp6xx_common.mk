@@ -15,10 +15,6 @@
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/scorpion_windy/overlay
 
-$(call inherit-product, device/sony/shinano/platform.mk)
-$(call inherit-product, vendor/sony/scorpion/scorpion-vendor.mk)
-$(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
-
 PRODUCT_COPY_FILES += \
     device/sony/scorpion_windy/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     device/sony/scorpion_windy/rootdir/system/etc/BCM4354.hcd:system/etc/firmware/BCM43xx.hcd \
@@ -69,3 +65,7 @@ PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
     ro.usb.pid_suffix=1C0
+
+$(call inherit-product, device/sony/shinano/platform.mk)
+$(call inherit-product, vendor/sony/scorpion/scorpion-vendor.mk)
+$(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
