@@ -66,6 +66,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
     ro.usb.pid_suffix=1C0
 
+# Camera actuator selection
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.alt.act=false
+
 $(call inherit-product, device/sony/shinano/platform.mk)
 $(call inherit-product, vendor/sony/shinano-scorpion/scorpion-vendor.mk)
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
