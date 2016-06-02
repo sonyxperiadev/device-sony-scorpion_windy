@@ -25,6 +25,11 @@ PRODUCT_COPY_FILES += \
     device/sony/scorpion_windy/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/scorpion_windy/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# Device Specific Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml \
+    frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml
+
 PRODUCT_COPY_FILES += \
     device/sony/scorpion_windy/rootdir/system/etc/tfa98xx/coldboot.patch:/system/etc/tfa98xx/coldboot.patch \
     device/sony/scorpion_windy/rootdir/system/etc/tfa98xx/TFA9890.patch:/system/etc/tfa98xx/TFA9890.patch \
