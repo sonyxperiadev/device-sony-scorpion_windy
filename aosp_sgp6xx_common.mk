@@ -78,4 +78,4 @@ $(call inherit-product, vendor/sony/shinano-scorpion/scorpion-vendor.mk)
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 
 # copy wlan firmware
-$(call inherit-product-if-exists, vendor/broadcom/wlan/bcmdhd/firmware/bcm4354/device-bcm.mk)
+$(call inherit-product-if-exists, firmware/broadcom/wlan/bcmdhd/firmware/bcm4354/device-bcm.mk)
