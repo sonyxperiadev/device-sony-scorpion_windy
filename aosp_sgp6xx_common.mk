@@ -23,10 +23,13 @@ PRODUCT_COPY_FILES += \
     $(BOARD_COMMON_PATH)/rootdir/system/etc/BCM4354.hcd:system/etc/firmware/BCM43xx.hcd \
     $(BOARD_COMMON_PATH)/rootdir/system/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
     $(BOARD_COMMON_PATH)/rootdir/system/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
-    $(BOARD_COMMON_PATH)/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     $(BOARD_COMMON_PATH)/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     $(BOARD_COMMON_PATH)/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     $(BOARD_COMMON_PATH)/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
+
+# Thermal Configuration
+PRODUCT_COPY_FILES += \
+    $(BOARD_COMMON_PATH)/rootdir/vendor/etc/thermanager.xml:vendor/etc/thermanager.xml
 
 PRODUCT_COPY_FILES += \
     $(BOARD_COMMON_PATH)/rootdir/system/etc/tfa98xx/coldboot.patch:/system/etc/tfa98xx/coldboot.patch \
